@@ -3,7 +3,7 @@ Nombre: Mario Parra
 
 En la práctica 1 he realizado dos clases.
 
-La clase principal llamada Hotel que tiene estos atributos: nombre, dirección, fax, teléfono, día de inauguración mes de inauguración, año de inauguración, nº de estrellas, nº de habitaciones y precio por noche.
+La clase principal llamada Hotel que tiene estos atributos: nombre, dirección, fax, teléfono, día de inauguración, mes de inauguración, año de inauguración, nº de estrellas, nº de habitaciones y precio por noche.
 El método calculaAntiguedad() nos dice cuántos años lleva el hotel dando servicio. Esta función toma como parámetros el día, mes y año de la inauguración y devuelve el los años que lleva prestando servicio.
 Con el método calculaPrecioDiscapacitado() podemos saber en cada hotel el precio rebajado que tiene una persona con discapacidad.
 El método getDatos() del hotel nos sirve para sacar por pantalla los datos del mismo.

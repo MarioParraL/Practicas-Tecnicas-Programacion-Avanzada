@@ -216,10 +216,10 @@ public class main {
                    			 mesInauguracion,  añoInauguracion,
                 			 numeroEstrellas,  numeroHabitaciones,  precioPorNoche,
                 			 nombreCliente,  apellidos,  nacionalidad,  DNI,
-                			 diaNacimiento,  mesNacimiento,  añoNacimiento,  diasEstancia,  numeroAdultos,  numeroNiños);
+                			 diaNacimiento,  mesNacimiento,  añoNacimiento,  diasEstancia,  numeroAdultos,  numeroNiños); */
                     	reservas.add(Reserva1);
                     	
-                    	Reserva1.horarioAtencionCliente(); */
+                    	Reserva1.horarioAtencionCliente(); 
                     	
                         break;
                    

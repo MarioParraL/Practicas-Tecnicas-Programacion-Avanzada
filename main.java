@@ -1,21 +1,27 @@
 package practica1;
 import java.util.Vector; 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
-
 public class main {
-
-	
-	
 	
 	public static void main(String[] args) {
 		
+		//Clase Local Date
+		LocalDate fechaHoy = LocalDate.now();
+		System.out.println("La fecha de hoy es " + fechaHoy); 
+		System.out.println("El año es " + fechaHoy.getYear() +
+				", el mes " + fechaHoy.getMonthValue() +
+				" (" + fechaHoy.getMonth() + ") y el día " + fechaHoy.getDayOfMonth());
+		
 		//Almacenamos hoteles y restaurantes en los vectores
 		
-Vector <Hotel> hoteles = new Vector<Hotel>();
-Vector <Restaurante> restaurantes = new Vector<Restaurante>();
+		
+   Vector <Hotel> hoteles = new Vector<Hotel>();
+   Vector <Restaurante> restaurantes = new Vector<Restaurante>();
+   Vector <ReservaCliente> reservas = new Vector<ReservaCliente>();
 		 
         Scanner sn = new Scanner(System.in);
         boolean salir = false;
@@ -27,7 +33,9 @@ Vector <Restaurante> restaurantes = new Vector<Restaurante>();
             System.out.println("1. Opcion 1: Añadir un hotel y restaurante");
             System.out.println("2. Opcion 2: Muestra los hoteles por pantalla");
             System.out.println("3. Opcion 3: Imprime un restaurante");
-            System.out.println("4. Opcion 4: Salir ");
+            System.out.println("4. Opcion 4: Añadir reserva de cliente ");
+            System.out.println("5. Opcion 5: Imprime Reservas ");
+            System.out.println("6. Opcion 6: Salir ");
         
  
             try {
@@ -86,6 +94,8 @@ Vector <Restaurante> restaurantes = new Vector<Restaurante>();
                				 numeroEstrellas, numeroHabitaciones, precioPorNoche);
                 		hoteles.add(hotel2);
                 		
+                		hotel2.horarioAtencionCliente();
+                		
                 		
                 		System.out.println("¿El hotel tiene restaurante? 1:SI. 2:NO");
                 		int op;
@@ -115,6 +125,8 @@ Vector <Restaurante> restaurantes = new Vector<Restaurante>();
                 			restaurante1 = restaurante1.añadirRestaurante(nombre, direccion, fax, telefono, camareros, cocineros, precioMenu, mesas, comensales, aforoMaximo);
                 			restaurantes.add(restaurante1);
                 			
+                			restaurante1.horarioAtencionCliente();
+                			
                 		}else {
                 			
                 		}
@@ -142,9 +154,87 @@ Vector <Restaurante> restaurantes = new Vector<Restaurante>();
                     	 }
                     	 
                     	 break;
-                        
+                       
+                    	 
+                    	 
                         
                     case 4:
+                        
+                    	
+                    	String nombreCliente = null;
+                    	System.out.println("Dime el nombre del cliente");
+                    	nombre = sn.next();
+                    	
+                    	String apellidos = null;
+                    	System.out.println("Dime los apellidos del cliente");
+                    	nombre = sn.next();
+                    	
+                    	String nacionalidad = null;
+                    	System.out.println("Dime la nacionalidad del cliente");
+                    	nombre = sn.next();
+                    	
+                    	String DNI = null;
+                    	System.out.println("Dime el dni del cliente");
+                    	nombre = sn.next();
+                    	
+                        int diaNacimiento;
+                    	System.out.println("Dime el dia de nacimiento del cliente");
+                    	diaNacimiento = sn.nextInt();
+                    	
+                    	int mesNacimiento;
+                    	System.out.println("Dime el mes de nacimiento del cliente");
+                    	mesNacimiento = sn.nextInt();
+                    	
+                    	int añoNacimiento;
+                    	System.out.println("Dime el año de nacimiento del cliente");
+                    	añoNacimiento = sn.nextInt();
+                    	
+                    	int diasEstancia;
+                    	System.out.println("Dime los dias de estancia del cliente");
+                    	diasEstancia = sn.nextInt();
+                    	
+                    	int numeroAdultos;
+                    	System.out.println("Dime el numero de adultos alojados");
+                    	numeroAdultos = sn.nextInt();
+                    	
+                    	int numeroNiños;
+                    	System.out.println("Dime el numero de niños alojaoda");
+                    	numeroNiños = sn.nextInt();
+                    	
+                    	
+                    	
+                    	
+                    	
+                    	
+                    	
+                    	
+                    	ReservaCliente Reserva1 = new ReservaCliente();
+                    	
+                    	//Error al añadir reserva (?)
+                    	
+                    	/*Reserva1 =  Reserva1.añadirReservaCliente(nombre,  direccion,  fax,  telefono,  diaInauguracion,
+                   			 mesInauguracion,  añoInauguracion,
+                			 numeroEstrellas,  numeroHabitaciones,  precioPorNoche,
+                			 nombreCliente,  apellidos,  nacionalidad,  DNI,
+                			 diaNacimiento,  mesNacimiento,  añoNacimiento,  diasEstancia,  numeroAdultos,  numeroNiños);
+                    	reservas.add(Reserva1);
+                    	
+                    	Reserva1.horarioAtencionCliente(); */
+                    	
+                        break;
+                   
+                    case 5:
+                    	
+                    	System.out.println("Has seleccionado la opcion 3: Imprimir Rservas");
+                   	 
+                   	 for(int i = 0; i<reservas.size(); i++) {
+                   		 System.out.print(reservas.elementAt(i).getDatos());
+                   	 }
+                    	break;
+                        
+                        
+                    	
+                    case 6:
                         salir = true;
                         break;
                     default:

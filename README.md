@@ -25,9 +25,14 @@ Diagrama de clases
 
 Práctica 3.
 Utilización de la Clase Local Date (main).
+
 Implementación del diagrama de clases.
+
 He generado un método con la clase math, en concreto "round". Quiere decir que devuelve el numero entero más cercano. En mi programa se encuentra en el método: public static double calculaPrecioDeportista(double precioPorNoche) de la clase Hotel.
+
 He añadido el operador condiciona "?:" al método: public double getPrecioPorNoche() de la clase Hotel
+
 He generado una Interfaz llamada IHotel.
+
 He realizado la mejora del main añadiendo las reservas del cliente.
 

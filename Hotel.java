@@ -110,7 +110,8 @@ public class Hotel {
 	}
 
 	public double getPrecioPorNoche() {
-		return this.precioPorNoche;
+		double factor = 0.015 + (this.getAñoInauguracion() >= 2018 ? 0.01 : 0.0); //Se pagará un suplemento por los hoteles mas nuevos.
+		return this.precioPorNoche * factor;
 	}
 
 	public void setPrecioPorNoche(double precioPorNoche) {
@@ -125,17 +126,17 @@ public class Hotel {
             int mesInauguracion,
             int añoInauguracion) {
 		
-int diaHoy, mesHoy, añoHoy, antiguedad;
+int diaHoy, mesHoy, añoHoy, antiguedad;
 
 diaHoy = Calendar.getInstance().get(Calendar.DAY_OF_MONTH); 
 mesHoy = Calendar.getInstance().get(Calendar.MONTH) + 1; 
-añoHoy = Calendar.getInstance().get(Calendar.YEAR);
+añoHoy = Calendar.getInstance().get(Calendar.YEAR);
 
 if ((mesHoy > mesInauguracion) ||
 ((mesHoy == mesInauguracion) && (diaHoy >= diaInauguracion))) 
-antiguedad = añoHoy - añoInauguracion;
+antiguedad = añoHoy - añoInauguracion;
 else
-antiguedad = añoHoy - añoInauguracion - 1;
+antiguedad = añoHoy - añoInauguracion - 1;
 System.out.println(antiguedad);
 return antiguedad;
 
@@ -149,19 +150,23 @@ return antiguedad;
 	
 	
 	
-	public static double calculaPrecioDiscapacitado(double precioPorNoche) {
-		return precioPorNoche / 2 + 10;
+	public static double calculaPrecioDeportista(double precioPorNoche) {
+		
+		return Math.round(precioPorNoche / 2 + 10);
 				
 	}
 	
-	public double getCalculaPrecioDiscapacitado() {
-		return calculaPrecioDiscapacitado(this.precioPorNoche);
+	public double getCalculaPrecioDeportista() {
+		return calculaPrecioDeportista(this.precioPorNoche);
 	}
 	
 	
 	
 	
-
+	public void horarioAtencionCliente() {
+		System.out.print("El horario del atencion al cliente del hotel  es L-D de 6:00 a 00:30");
+	}
+	
 	
 	
 	public String getDatos() {
@@ -171,7 +176,7 @@ return antiguedad;
 				+ this.numeroEstrellas + " Estrellas(*) " + " \n Cuenta con " +
 				this.numeroHabitaciones + " habitaciones " + " \n El precio por noches es de " + this.precioPorNoche +
 				"€ " + "\n El precio por noche para una persona con discapacidad es de: " +
-				this.getCalculaPrecioDiscapacitado() + "€ ";
+				this.getCalculaPrecioDeportista() + "€ ";
 	}
 		
 	

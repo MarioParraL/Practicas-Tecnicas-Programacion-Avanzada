@@ -35,7 +35,7 @@ Implementación del diagrama de clases.
 
 He generado un método con la clase math, en concreto "round". Quiere decir que devuelve el numero entero más cercano. En mi programa se encuentra en el método: public static double calculaPrecioDeportista(double precioPorNoche) de la clase Hotel.
 
-He añadido el operador condiciona "?:" al método: public double getPrecioPorNoche() de la clase Hotel.
+He añadido el operador condicional "?:" al método: public double getPrecioPorNoche() de la clase Hotel.
 
 He generado una Interfaz llamada IHotel.
 

@@ -1,7 +1,7 @@
 # PracticasTecnicasProgra.
 Nombre: Mario Parra
 
-En la práctica 1 he realizado dos clases.
+## En la práctica 1 he realizado dos clases.
 
 La clase principal llamada Hotel que tiene estos atributos: nombre, dirección, fax, teléfono, día de inauguración, mes de inauguración, año de inauguración, nº de estrellas, nº de habitaciones y precio por noche.
 El método calculaAntiguedad() nos dice cuántos años lleva el hotel dando servicio. Esta función toma como parámetros el día, mes y año de la inauguración y devuelve el los años que lleva prestando servicio.
@@ -17,7 +17,7 @@ Igualmente que en la clase hotel tenemos un método añadirRestaurante().
 En la clase Main he realizado dos vectores almacenan los hoteles y restaurante.
 Además he hecho un menú (switch-case) con diferentes opciones que permite añadir hoteles y restaurantes e imprimirlos por pantalla.
 
-Práctica 2.
+## Práctica 2.
 
 He realizado una nueva clase llamada ReservaCliente que almacena los datos del cliente que hecho la reserva.
 
@@ -27,7 +27,7 @@ Mejora del main.
 
 Diagrama de clases.
 
-Práctica 3.
+## Práctica 3.
 
 Utilización de la Clase Local Date (main).
 

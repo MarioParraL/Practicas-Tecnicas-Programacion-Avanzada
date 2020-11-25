@@ -87,6 +87,10 @@ public class Restaurante extends Hotel{
 		this.aforoMaximo = aforoMaximo;
 	}
 	
+	public void horarioAtencionCliente() {
+		System.out.print("El horario de atencion para reservas del restaurante es L-D de 8:00 a 22:30");
+	}
+	
 
 public double getCuenta() {
 	return calculaCuenta(this.comensales, this.precioMenu);

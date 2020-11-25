@@ -17,7 +17,17 @@ Igualmente que en la clase hotel tenemos un método añadirRestaurante().
 En la clase Main he realizado dos vectores almacenan los hoteles y restaurante.
 Además he hecho un menú (switch-case) con diferentes opciones que permite añadir hoteles y restaurantes e imprimirlos por pantalla.
 
-
+Práctica 2.
 He realizado una nueva clase llamada ReservaCliente que almacena los datos del cliente que hecho la reserva
-
 He realizado los tests correspondientes de las clases: Hotel, Restaurante y ReservaCliente.
+Mejora del main.
+Diagrama de clases
+
+Práctica 3.
+Utilización de la Clase Local Date (main).
+Implementación del diagrama de clases.
+He generado un método con la clase math, en concreto "round". Quiere decir que devuelve el numero entero más cercano. En mi programa se encuentra en el método: public static double calculaPrecioDeportista(double precioPorNoche) de la clase Hotel.
+He añadido el operador condiciona "?:" al método: public double getPrecioPorNoche() de la clase Hotel
+He generado una Interfaz llamada IHotel.
+He realizado la mejora del main añadiendo las reservas del cliente.
+

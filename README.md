@@ -18,6 +18,7 @@ En la clase Main he realizado dos vectores almacenan los hoteles y restaurante.
 Además he hecho un menú (switch-case) con diferentes opciones que permite añadir hoteles y restaurantes e imprimirlos por pantalla.
 
 Práctica 2.
+
 He realizado una nueva clase llamada ReservaCliente que almacena los datos del cliente que hecho la reserva.
 
 He realizado los tests correspondientes de las clases: Hotel, Restaurante y ReservaCliente.
@@ -27,6 +28,7 @@ Mejora del main.
 Diagrama de clases.
 
 Práctica 3.
+
 Utilización de la Clase Local Date (main).
 
 Implementación del diagrama de clases.

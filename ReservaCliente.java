@@ -18,7 +18,7 @@ public class ReservaCliente extends Hotel{
 	  
 	public ReservaCliente(String nombre, String direccion, String fax, int telefono, int diaInauguracion,
 			int mesInauguracion, int añoInauguracion,
-			int numeroEstrellas, int numeroHabitaciones, float precioPorNoche,
+			int numeroEstrellas, int numeroHabitaciones, double precioPorNoche,
 			String nombreCliente, String apellidos, String nacionalidad, String DNI,
 			int diaNacimiento, int mesNacimiento, int añoNacimiento, int diasEstancia, int numeroAdultos, int numeroNiños) {
 		
@@ -37,6 +37,10 @@ public class ReservaCliente extends Hotel{
 		this.numeroNiños = numeroNiños;
 		
 				
+	}
+	
+	public ReservaCliente() {
+		
 	}
 	
 	
@@ -135,6 +139,11 @@ public class ReservaCliente extends Hotel{
 	}
 
 	
+	public void horarioAtencionCliente() {
+		System.out.print("El horario de atencion al cliente para reservaer es L-S de 9:00 a 23:30");
+	}
+	
+	
 	public int getEdad() {
 		return calculaEdad(this.diaNacimiento,
 				this.mesNacimiento, this.añoNacimiento);
@@ -152,29 +161,46 @@ public class ReservaCliente extends Hotel{
 	
 	public static int calculaEdad(int diaNacimiento,
             int mesNacimiento,
-            int añoNacimiento) {
-int diaHoy, mesHoy, añoHoy, edad;
+            int añoNacimiento) {
+int diaHoy, mesHoy, añoHoy, edad;
 diaHoy = Calendar.getInstance().get(Calendar.DAY_OF_MONTH); 
 mesHoy = Calendar.getInstance().get(Calendar.MONTH) + 1; 
-añoHoy = Calendar.getInstance().get(Calendar.YEAR);
+añoHoy = Calendar.getInstance().get(Calendar.YEAR);
 
 if ((mesHoy > mesNacimiento) ||
 ((mesHoy == mesNacimiento) && (diaHoy >= diaNacimiento))) 
-edad = añoHoy - añoNacimiento;
+edad = añoHoy - añoNacimiento;
 else
-edad = añoHoy - añoNacimiento - 1;
+edad = añoHoy - añoNacimiento - 1;
 return edad;
 
 }
 	
 	public String getDatos() {
-		return  " El nombre del cliente es: " + this.nombreCliente + " \n Los apellidos son:  " + this.apellidos +
+		return "El nombre del hotel para la reserva es es: " + super.getNombre() +
+				" \n La direccion es: " + super.getDireccion() + " \n El Fax es: " + this.getFax() + " \n El numero de telefono del hotel es: " + 
+				this.getTelefono() + " El nombre del cliente es: " + this.nombreCliente + " \n Los apellidos son:  " + this.apellidos +
 				"la nacionalidad es: " + this.nacionalidad + " el dni es : " + this.DNI + " el dia de nacimiento es : " + 
 				this.diaNacimiento + " el mes de nacimiento es: " + this.mesNacimiento + " el año de nacimiento es: " +
 				this.añoNacimiento + " los dias de estancia que ha alquilado son" + this.diasEstancia + " el numero de niños es: " + 
 				this.numeroNiños + " los adultos es/son: " + this.numeroAdultos;
 	}
 
+	public ReservaCliente añadirReservaCliente(String nombre, String direccion, String fax, int telefono, int diaInauguracion,
+			int mesInauguracion, int añoInauguracion,
+			int numeroEstrellas, int numeroHabitaciones, double precioPorNoche,
+			String nombreCliente, String apellidos, String nacionalidad, String DNI,
+			int diaNacimiento, int mesNacimiento, int añoNacimiento, int diasEstancia, int numeroAdultos, int numeroNiños) {
+		
+		System.out.println(super.getDatos());
+		ReservaCliente Reserva1 = new ReservaCliente( nombre,  direccion,  fax,  telefono,  diaInauguracion,
+			 mesInauguracion,  añoInauguracion,
+			 numeroEstrellas,  numeroHabitaciones,  precioPorNoche,
+			 nombreCliente,  apellidos,  nacionalidad,  DNI,
+			 diaNacimiento,  mesNacimiento,  añoNacimiento,  diasEstancia,  numeroAdultos,  numeroNiños);
+		
+		return Reserva1;
+	}
 	
 	
 

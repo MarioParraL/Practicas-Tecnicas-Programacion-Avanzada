@@ -41,5 +41,7 @@ He generado una Interfaz llamada IHotel.
 
 He realizado la mejora del main añadiendo las reservas del cliente.
 
+## Diagrama de clases :
+
 
 ![DiagramaClases](/DiagramaClases.png)

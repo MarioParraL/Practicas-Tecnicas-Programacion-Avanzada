@@ -41,6 +41,16 @@ He generado una Interfaz llamada IHotel.
 
 He realizado la mejora del main añadiendo las reservas del cliente.
 
+## Prática 4
+
+Uso de tipos genéricos en clases e interfaces.
+
+Nueva interfaz: GenericosTipo donde se definen los métodos de la clase Habitación.
+
+Dos nuevas clases: Tipos y Habitacion. Esta última hereda de tipos.
+
+En cuanto a lectura/escritura en fichero, al tener un dispositivo Mac me es tedioso. Necesito entenderlo.
+
 ## Diagrama de clases :
 
 

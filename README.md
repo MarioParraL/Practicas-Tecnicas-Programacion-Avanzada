@@ -55,3 +55,10 @@ En cuanto a lectura/escritura en fichero, al tener un dispositivo Mac me es tedi
 
 
 ![DiagramaClases](/DiagramaClases.png)
+
+
+## Mejora práctica:
+
+Añadida la internacionalización en dos idiomas: inglés y español
+
+Mejora del main.

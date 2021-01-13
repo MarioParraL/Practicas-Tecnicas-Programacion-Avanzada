@@ -1,6 +1,7 @@
 package practica1;
 
 import java.util.Vector; 
+
 import java.util.Calendar;
 
 public class Hotel {
@@ -15,6 +16,8 @@ public class Hotel {
 	private int numeroEstrellas;
 	private int numeroHabitaciones;
 	private double precioPorNoche;
+	
+
 	
 	
 	// El constructor de la clase Hotel está sobrecargado.
@@ -43,10 +46,10 @@ public class Hotel {
 		this.telefono = telefono;
 	}
 	
-	public Hotel() { // Constructor no inicializado.
+	
+	public Hotel() {
 		
 	}
-	
 	
 	
 	// Métodos Getter and Setter.
@@ -182,22 +185,8 @@ return antiguedad;
 	
 	
 	
-	public Hotel añadirHotel(String nombre, String direccion, String fax, int telefono, int diaInauguracion, int mesInauguracion,
-			int añoInauguracion, int numeroEstrellas, int numeroHabitaciones, double precioNoche) {
-		
-		
-		Hotel hotel2 = new Hotel(nombre, direccion, fax, telefono, diaInauguracion, mesInauguracion, añoInauguracion,
-				 numeroEstrellas, numeroHabitaciones, precioNoche);
-		return hotel2;
-		
+	
 
-		
-	}
-	
-	
-	
-	
-	
 	
 	
 

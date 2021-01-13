@@ -13,6 +13,7 @@ public class Restaurante extends Hotel{
 	
 	
 	
+	
 	public Restaurante(String nombre, String direccion, String fax, int telefono, int camareros,
 			int cocineros, double precioMenu, int mesas, int comensales, int aforoMaximo) {
 		
@@ -106,12 +107,12 @@ public static double calculaCuenta(int comensales, double precioMenu) {
 
 public String getDatos() {
 	return  "El nombre del hotel al que pertenece el restaurante es: " + super.getNombre() +
-			" La direccion es: " + super.getDireccion() + " El Fax es: " + this.getFax() + " El numero de telefono del hotel es: " + 
-this.getTelefono() + " "  + " El nº de camareros que trabajan en el restaurante es de  " + this.camareros +
-" El nº de cocineros que trabajan en el restaurante es de :  " + this.cocineros + " El precio por persona del menu es de " +
-this.precioMenu + "€ " + " El numero de mesas totales es de " +
-			this.mesas + "La última semana hubo un total de  " + this.comensales + "comensales " +
-"Donde los comensales gastaron un total de " + getCuenta() + "€" + " El aforo máximo de restaunrate se compone de " +
+			" \n La direccion es: " + super.getDireccion() + " \n El Fax es: " + this.getFax() + " \n El numero de telefono del hotel es: " + 
+this.getTelefono() + " "  + " \n El nº de camareros que trabajan en el restaurante es de  " + this.camareros +
+" \n El nº de cocineros que trabajan en el restaurante es de :  " + this.cocineros + " \n El precio por persona del menu es de " +
+this.precioMenu + "€ " + " \n El numero de mesas totales es de " +
+			this.mesas + " \n La última semana hubo un total de  " + this.comensales + " comensales " +
+"Donde los comensales gastaron un total de " + getCuenta() + "€" + "  \n El aforo máximo de restaunrate se compone de " +
 			this.aforoMaximo + " personas ";
 }
 

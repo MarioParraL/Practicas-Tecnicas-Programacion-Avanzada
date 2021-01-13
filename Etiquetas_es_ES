@@ -1,0 +1,81 @@
+package Etiquetas;
+
+
+
+public  class Etiquetas_es_ES extends java.util.ListResourceBundle{
+
+	private Object[][]lenguajes= { 
+//LocalDate
+			
+			{"FechaActual","La fecha es: "},
+			{"Año", "EL año es:: "},
+			{"Mes","El mes es: "},
+			{"Dia","El dia es: "},
+			
+			//Hotel
+			{"Seleccion","Has seleccionado la opcion 1: añadir un hotel y/o restaurante"},
+			{"NombreHotel","Escribe el nombre del hotel: "},
+			{"DireccionHotel"," Escribe la direccion del hotel hotel : "},
+			{"FaxHotel" ,"Escribe el fax del hotel: "},
+			{"TelefonoHotel"," Escribe el telefono del hotel: "},
+			
+			
+			{"DiaI","Escribe el dia de inauguracion del hotel"},
+			{"MesI","Escribe el mes de inauguracion del hotel"},
+			{"AñoI","Escribe el año de inauguracion del hotel"},
+			
+			{"Estrellas"," Escribe el numero de estrellas del hotel hotel"},
+			{"Habitaciones", "Escribe el numero de habitaciones del hotel hotel"},		
+			{"Precio","Escribe el precio por noche del hotel"},
+			
+			//Restaurante
+			
+			{"HotelRestaurante","¿El hotel tiene restaurante? 1.SI 2.NO "},
+			{"Camareros","Escribe el numero de camareros: "},
+			{"Cocineros","Escribe el numero de cocineros: "},
+			{"PrecioMenu","Escribe el precio del menu: "},
+			{"Mesas","Escribe el numero de mesas: "},
+			{"ComensalesUltimaSemana","Escribe el numero de comensales de la ultima semana: "},								
+			{"AforoMaximo","Escribe el aforo maximo: "},
+			
+			//Cliente
+			
+			{"NombreCliente","Escribe el nombre del cliente: "},
+			{"ApellidosCliente","Escribe sus apellidos: "},
+			{"NacionalidadCliente","Escribe su nacionalidad: "},
+			{"DNICliente","Escribe su DNI: "},
+			{"DiaNac","Escribe el dia de nacimiento: "},
+			{"MesNac","Escribe el mes de nacimiento"},
+			{"AñoNac","Escribe el año de nacimiento"},
+			{"DiasEstanciaCliente","Escribe cuantos dias va a pasar"},
+     		{"AdultosAlojados","Escribe el numero de adultos"},
+			{"NiñosAlojados","Escribe el numero de niños"},
+			
+			//Opciones Main
+			
+			{"OP1","Opcion 1: Añade hotel y restaurante: "},
+			{"OP2","Opcion 2: Muestra hotel por pantalla  "},
+			{"OP3","Opcion 3: Muestra restaurante por pantalla "},
+			{"OP4","Opcion 4: Añade reserva de cliente: "},
+			{"OP5","Opcion 5: Muestra la reserva del cliente"},
+			{"OP6","Opcion 6: Salir"},
+			
+			
+			
+			{"Indica0","Elige una opcion: 1,2,3,4,5 or 6: "},
+			{"Indica1","Elige una opcion: 1,2,3,4,5 or 6:"},
+			{"Indica2","Elige una opcion: 1,2,3,4,5 or 6:"},
+			{"Indica3" ,"Elige una opcion: 1,2,3,4,5 or 6:"},
+			
+			
+			{"Indica4","Solo del 1-4:"},
+			
+			
+	};
+	
+	protected Object[][] getContents() {
+		return lenguajes;
+	}
+
+
+}

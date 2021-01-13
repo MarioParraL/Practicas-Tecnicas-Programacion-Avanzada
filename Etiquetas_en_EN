@@ -1,0 +1,80 @@
+package Etiquetas;
+
+
+public  class Etiquetas_en_EN extends java.util.ListResourceBundle{
+
+	private Object[][]lenguajes= { 
+			//LocalDate
+			
+			{"FechaActual","The date is: "},
+			{"Año", "The year is: "},
+			{"Mes","The Month is: "},
+			{"Dia"," The Day is: "},
+			
+			//Hotel
+			{"Seleccion","You has selectioned the option 1: add hotel and restaurant"},
+			{"NombreHotel","Write the name of the hotel: "},
+			{"DireccionHotel"," Write the addrress oh the hotel : "},
+			{"FaxHotel" ,"Writte The fax of the hotel : "},
+			{"TelefonoHotel"," Writte the phone of the hotel: "},
+			
+			
+			{"DiaI","Writte the dia of inaugation of the hotel"},
+			{"MesI","Writte the month of inaugation of the hotel"},
+			{"AñoI","Writte the year of inaugation of the hotel"},
+			
+			{"Estrellas"," Writte the number of stars of the hotel"},
+			{"Habitaciones", "Writte the number of rooms of the hotel"},		
+			{"Precio","Writte the price of the hotel"},
+			
+			//Restaurante
+			
+			{"HotelRestaurante","The hotel has restaurant) 1.YES 2.NO: "},
+			{"Camareros","Wriite the number of waiters: "},
+			{"Cocineros","YWritte the number of chefs: "},
+			{"PrecioMenu","Wrire the price of the menu: "},
+			{"Mesas","Writte the number of tables: "},
+			{"ComensalesUltimaSemana","Writte the number of dinners about last week: "},								
+			{"AforoMaximo","Write the maximum capacity: "},
+			
+			//Cliente
+			
+			{"NombreCliente","Writte the name of the client: "},
+			{"ApellidosCliente","Writte the surname of the client: "},
+			{"NacionalidadCliente","Writte the nacionality of the client: "},
+			{"DNICliente","Writte the DNI of the client: "},
+			{"DiaNac","Writte the day of birth of the client: "},
+			{"MesNac","Writte the month of birth of the client"},
+			{"AñoNac","Writte the year of birth of the client"},
+			{"DiasEstanciaCliente","Writte the days the client is going to spent"},
+     		{"AdultosAlojados","Writte the number of  adults"},
+			{"NiñosAlojados","Writte the number of children"},
+			
+			//Opciones Main
+			
+			{"OP1","Option 1: add hotel and restaurant: "},
+			{"OP2","Option 2: shows hotels on screen;  "},
+			{"OP3","Option 3: shows restaurants on screen "},
+			{"OP4","Option 4: add customer reservation: "},
+			{"OP5","Option 5: shows customer reservation on screen"},
+			{"OP6","Option 6: Exit"},
+			
+			
+			
+			{"Indica0","Choose one of the options: 1,2,3,4,5 or 6: "},
+			{"Indica1","Choose one of the options: 1,2,3,4,5 or 6:"},
+			{"Indica2","Choose one of the options: 1,2,3,4,5 or 6:"},
+			{"Indica3" ,"Choose one of the options: 1,2,3,4,5 or 6:"},
+			
+			
+			{"Indica4","Only numbers between 1-4:"},
+			
+			
+	};
+	
+	protected Object[][] getContents() {
+		return lenguajes;
+	}
+
+
+}
